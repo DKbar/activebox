@@ -554,6 +554,20 @@ p{
         justify-content: center;
     }
 
+    /* Testimonials */
+    .testimonials__photo{
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0 40px; 
+    }
+
+    .testimonials__content{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    }
+    
+
 }
 @media (max-width: 767px) { /* мобильные устройства */
 
@@ -592,6 +606,10 @@ p{
     }
 
     /* Team */
+
+    .team{
+        margin: 60px 0 30px;
+    }
     .team__item{
         width: 100%;
         text-align: center;
