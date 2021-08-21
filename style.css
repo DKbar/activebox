@@ -526,8 +526,12 @@ p{
     .intro__title{
         font-size:40px;
     }
-}
 
+    /* Features */
+    .features__item{
+        width: 50%;
+    }
+}
 @media (max-width: 767px) { /* мобильные устройства */
 
     .intro{
@@ -548,5 +552,12 @@ p{
         width: 25px;
         height: 25px;
     }
+
+    .features__item{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     
 }
