@@ -566,7 +566,6 @@ p{
         padding-left: 0;
         padding-bottom: 40px;
     }
-    
 
 }
 @media (max-width: 767px) { /* мобильные устройства */
@@ -624,4 +623,44 @@ p{
         justify-content: center;
     }
 
+  /* Testimonials */
+    .testimonials__text{
+        font-size: 25px;
+    }    
+
+    /* Download  */
+    .download{
+        margin: 50px 0
+    }
+
+    .download__title{
+        font-size: 24px;
+    }
+        
+    /* Btn  */
+    .btn--long {
+        min-width: 260px;
+    }
+
+    /* Footer  */
+    .footer__inner{
+        padding: 30px 0;
+    }
+    .footer__block{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer__block:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 414px){
+  /* Testimonials */
+  .reviews__img{
+      right: -100px;
+  }
 }
