@@ -471,9 +471,9 @@ p{
 .burger{
     display: none;
     background: none;
-    border: 0;
+    border: none;
     cursor: pointer;
-    padding: 15px 0;
+    padding: 9px 0;
 }
 
 .burger__item{
