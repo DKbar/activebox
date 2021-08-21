@@ -285,7 +285,6 @@ p{
 
 .social--footer{
     justify-content: center;
-    background-color: ;
 }
 .social__item{
     display: flex;
@@ -471,6 +470,10 @@ p{
 
 .burger{
     display: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 15px 0;
 }
 
 .burger__item{
@@ -539,6 +542,11 @@ p{
     .intro_subtitle{
         font-size: 16px;
         margin-bottom: 30px;
+    }
+
+    .social__item{
+        width: 25px;
+        height: 25px;
     }
     
 }
