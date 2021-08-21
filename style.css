@@ -85,7 +85,7 @@ p{
 }
 .intro__inner{
     width: 100%;
-    width: 970px;
+    max-width: 970px;
     margin: 0 auto;
 }
 .intro__title{
@@ -472,7 +472,9 @@ p{
 
 /*____________ Media ________ */
 
-@media (max-width:1200px) {
+@media (max-width: 991px) {
+
+    /* Intro */
     .intro__title{
         font-size:40px;
     }
