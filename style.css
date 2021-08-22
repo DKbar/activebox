@@ -38,6 +38,17 @@ p{
     z-index: 1000;
 }
 
+.header.fixed{
+    position: fixed;
+    background-color: #31344e;
+    height: auto;
+}
+.header.fixed .header__inner{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 0;
+    
+}
 .header__inner{
     display: flex;
     justify-content: space-between;  /* вмете с flex, для разделения элементов */
@@ -340,6 +351,16 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
+.testimonials__slider{
+    height: 500px;
+    overflow: hidden;
+}
+
+.testimonials__slider.slick-initialized{
+    height: auto;
+    
+}
+
 
 .testimonials__photo{
     width: 50%;
@@ -380,6 +401,42 @@ p{
     color: #fff;
 
 }
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.slick-dots li{
+    margin: 0 5px;
+}
+.slick-dots button{
+    width: 15px;
+    height: 15px;
+
+    background: #fff;
+    border-radius: 50%;
+    opacity: .5;
+    border: 0;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+.slick-dots button:focus{
+    outline: 0;
+}
+
+.slick-dots .slick-active button{
+    opacity: 1;
+} 
 
 /*____________ Download ________ */
 
@@ -523,6 +580,22 @@ p{
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #31344e;
+
+        text-align: right;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    .nav.show{
+        display:flex;
+    }
+    .nav__link{
+        padding: 9px 15px;
     }
 
     .burger{

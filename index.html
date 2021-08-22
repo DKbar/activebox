@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,9 +7,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&
         family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- устанавливает ширину равной ширине девайса, zoom -1 (обычный) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- устанавливает ширину равной ширине девайса, zoom -1 (обычный) -->
+
+
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Описание страницы" />  <!-- описание используется при поиске -->
+    <meta name="keywords" content="Ключевые слова" />  <!-- описание используется при поиске -->
+    <meta name="google" content="notranslate" />  
     <title>AciveBox</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -43,21 +61,21 @@
 
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
                     <img src="img/activebox-logo.png" alt="">
                 </div>
-                <nav class="nav">
-                    <a class="nav__link" href="#">Features</a>
-                    <a class="nav__link" href="#">Works</a>
-                    <a class="nav__link" href="#">Our Team</a>
-                    <a class="nav__link" href="#">Testimonials</a>
-                    <a class="nav__link" href="#">Download</a>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features">Features</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                    <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+                    <a class="nav__link" href="#" data-scroll="#testimonials">Testimonials</a>
+                    <a class="nav__link" href="#" data-scroll="#download">Download</a>
                 </nav>
 
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">Menu</span>
                 </button>
 
@@ -65,7 +83,7 @@
         </div>
     </header>
     <!-- Intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">
@@ -81,7 +99,7 @@
     <!-- Features -->
     <div class="container">
 
-        <div class="features">
+        <div class="features" id="features">
 
             <div class="features__item">
                 <img class="features__icon" src="img/features/feature1.png" alt="">
@@ -129,7 +147,7 @@
 
     </div> <!-- /.container -->
     <!-- Works -->
-    <div class="works">
+    <div class="works" id="works">
 
         <div class="works__item">
             <img class="works__image" src="img//works1/work1.png" alt="">
@@ -197,7 +215,7 @@
 
     </div> <!-- /.works -->
 
-    <div class="team">
+    <div class="team" id="team">
         <div class="container">
             <div class="team__inner">
 
@@ -326,26 +344,40 @@
     </div><!-- /.team -->
 
     <!-- Testimonials -->
-    <div class="testimonials">
+    <div class="testimonials" id="testimonials">
         <div class="container">
-
-            <div class="testimonials__item">
-                <div class="testimonials__photo">
-                    <img class="reviews__img" src="img/reviews/review1.jpg" alt="">
+            <div class="testimonials__slider" id="testimonialsSlider">
+                <div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__photo">
+                            <img class="reviews__img" src="img/reviews/review1.jpg" alt="">
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit
+                                aliquet.
+                                Donec sed odio dui. Aenean eu leo quam...”</div>
+                            <div class="testimonials__autor">Susan Sims, Interaction Designer at XYZ</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonials__content">
-                    <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit
-                        aliquet.
-                        Donec sed odio dui. Aenean eu leo quam...”</div>
-                    <div class="testimonials__autor">Susan Sims, Interaction Designer at XYZ</div>
+                <div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__photo">
+                            <img class="reviews__img" src="img/reviews/review1.jpg" alt="">
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Phasellus feugiat risus nec nulla consequat dapibus. Nulla ultricies malesuada ultrices. Nunc.</div>
+                            <div class="testimonials__autor">Susan Sims, Interaction Designer at XYZ</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div><!-- /.container -->
     </div><!-- /.testimonials -->
 
     <!-- Download -->
-    <div class="download">
+    <div class="download" id="download">
         <div class="container">
             <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
             <div class="download__text">
@@ -405,19 +437,10 @@
         </div>
     </div><!-- /.footer -->
 
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
 </html>
-
-<!--                 <div class="loaction">
-                    <div class="locatio__text"></div>
-                </div>
-                <div class="share">
-                    <div class="share_social">
-    
-                    </div>
-                </div>
-                <div class="about">
-                    <div class="about__text"></div>
-                </div> -->
